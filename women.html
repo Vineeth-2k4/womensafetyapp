@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="women.css">
+    <title>Stay Safe - Women's Security System</title>
+    <link rel="stylesheet" href="women.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center">
+        <header>
+            <h1>Stay Safe - Women's Security System</h1>
+        </header>
+        <main>
+            <section id="scream-alarm">
+                <h2>Scream Alarm</h2>
+                <button id="scream-button" onclick = "btn()" >Activate Scream Alarm</button>
+                <select id="scream-sound">
+                    <option value="male">Male Voice Scream</option>
+                    <option value="siren">Police Siren</option>
+                </select>
+            </section>
+
+            <section id="fake-call">
+                <h2>Fake Call Timer</h2>
+                <input type="text" id="fake-call-name" placeholder="Enter name for fake call">
+                <input type="number" id="fake-call-timer" placeholder="Set timer in seconds">
+                <button id="fake-call-button">Fake Call</button>
+            </section>
+
+            <section id="where-are-you">
+                <h2>Where Are You</h2>
+                <button id="send-location-button">Send Location</button>
+            </section>
+
+            <section id="track-me">
+                <h2>Track Me</h2>
+                <button id="track-me-button">Track Me</button>
+            </section>
+
+            <section id="friends-list">
+                <h2>Friends List</h2>
+                <ul id="friend-list">
+                    <!-- Friends will be listed here -->
+                </ul>
+                <input type="text" id="friend-name" placeholder="Add Friend">
+                <button id="add-friend-button">Add Friend</button>
+            </section>
+
+            <section id="settings">
+                <h2>Settings</h2>
+                <button id="emergency-services">Enable Emergency Services</button>
+                <button id="low-battery-alert">Low Battery Alert</button>
+            </section>
+
+            <section id="emergency">
+                <h2>Emergency SOS</h2>
+                <button id="emergency-button">Send SOS</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
